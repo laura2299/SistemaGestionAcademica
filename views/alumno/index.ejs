@@ -68,8 +68,10 @@
                 <td><%=alumno.ci %></td>
                 <td><%=alumno.matricula %></td>
                 <td>
-                    <a href="/alumno/edit/<%=alumno.id %>" class="btn btn-outline-info">editar</a>
-                    <a href="/alumno/delete/<%=alumno.id %>" class="btn btn-outline-danger">Borrar</a>
+                  <a href="/alumno/materias/<%=alumno.id %>" class="btn btn-primary">Ver Materias</a>
+                  <a href="/alumno/anadir/materia/<%=alumno.id %>" class="btn btn-success">Add Materias</a>
+                    <a href="/alumno/edit/<%=alumno.id %>" class="btn btn-info">editar</a>
+                    <a href="/alumno/delete/<%=alumno.id %>" class="btn btn-danger">Borrar</a>
                 </td>
             </tr>
             <% }) %>

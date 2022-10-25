@@ -33,3 +33,18 @@ exports.save =(req,res)=>{
         }
     });
  };
+
+ exports.add =(req,res)=>
+ {
+    const idAlumno =req.body.idAlumno;
+    const idMateria =req.body.idMateria;
+    
+    conexion.query('INSERT INTO alumno_materia SET ?',{idAlumno:idAlumno,idMateria:idMateria},
+    (error,results)=>{
+        if (error) {
+            console.log(error);
+        }else{
+            res.redirect('/alumnos');
+        }
+    });
+ };

@@ -4,6 +4,7 @@ const { json } = require('express/lib/response');
 const app = express();
 //invocamos al motor de plantillas
 app.set('view engine','ejs');
+//invoca datos del formulario
 
 app.use(express.urlencoded({extended:false}));
 app.use(express(json));
